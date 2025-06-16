@@ -10,7 +10,7 @@ workflows:
   - id: 8n3z9a40nl
     name: ltxv_deployed_api.json
     file: ltxv_workflow/ltxv_deployed_api.json
-    version: 28
+    version: 29
     description: ''
     inputs:
       - path: 23.inputs.default_value
@@ -35,7 +35,8 @@ workflows:
         category: output
         randomize: true
     outputs:
-      - label: Output Video
+      - path: 34.inputs.filename_prefix
+        label: Output Video
         demo_type: video
     skip_preprocess: true
     advancedConfig: false
@@ -61,7 +62,7 @@ normal_workflows:
   - id: 8n3z9a40nl
     name: ltxv_deployed.json
     file: ltxv_workflow/ltxv_deployed.json
-    version: 28
+    version: 29
   - id: 4av7xdezjr9
     name: ltx_video_13b.json
     file: ltxv_workflow/ltx_video_13b.json
